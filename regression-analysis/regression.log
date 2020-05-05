@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2019.2.21)  4 MAY 2020 19:46
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2019.2.21)  5 MAY 2020 08:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2152,7 +2152,7 @@ or  <return>  to continue without it.
 
 \c@case=\count366
 \c@solve=\count367
-Package hyperref Info: Option `colorlinks' set `true' on input line 88.
+Package hyperref Info: Option `colorlinks' set `true' on input line 71.
 ) (./regression.aux)
 \openout1 = `regression.aux'.
 
@@ -2276,12 +2276,12 @@ LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <10.53937> not available
 (Font)              size <10.95> substituted on input line 78.
 
 [2] [3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 106.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 105.
  [4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 106.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 105.
  (./regression.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 106.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 106.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 105.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 105.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -2290,15 +2290,12 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 106.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 105.
  ) 
 Here is how much of TeX's memory you used:
  41539 strings out of 494558
  803474 string characters out of 6167440
- 884780 words of memory out of 5000000
+ 884775 words of memory out of 5000000
  44703 multiletter control sequences out of 15000+600000
  536339 words of font info for 65 fonts, out of 8000000 for 9000
  425 hyphenation exceptions out of 8191
