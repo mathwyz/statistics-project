@@ -21,5 +21,4 @@ main()
 	    if(nu%n==0)printf("\n");
     }
 	for(k=0;i<=n;)
-	
 	} 
