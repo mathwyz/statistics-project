@@ -1,0 +1,61 @@
+#include<stdio.h>
+#include<stdlib.h>
+main()
+{
+	int n,i,j,k,nu=0;
+	//输入矩阵A
+	printf("请输入你要分解的矩阵的阶数:\n");
+	scanf("%d",&n);
+	float A[n][n];
+	float b[n];
+	printf("\n请输入矩阵A:\n");
+	for(i=0;i<=n-1;i++)
+	for(j=0;j<=n-1;j++)
+	   scanf("%f",&A[i][j]);
+	printf("\n你所输入的矩阵是:\n");
+	for(i=0;i<=n-1;i++)
+	for(j=0;j<=n-1;j++)
+	{
+		nu++;
+	    printf("%f\t",A[i][j]);
+	    if(nu%n==0)printf("\n");
+    }
+    printf("\n请输入向量b:\n");
+    for(i=1;i<=n;i++)
+    scanf("%f",&b[i]);
+    printf("\n你输入的向量b为:\n");
+    for(i=1;i<=n;i++)
+    printf("%f\t",&b[i]);
+    //矩阵A的LR分解和验证 
+	for(i=0;i<=n-1;i++)
+	for(j=i;j<=n-1;j++)
+	{
+		for(k=0;k<=i-1;k++)
+	    {
+		   A[i][j]=A[i][j]-A[i][k]*A[k][j];
+		   A[j][i]=A[j][i]-A[j][k]*A[k][i];
+	    } 
+	 if(A[i][i]==0)
+	 {
+	 	printf("矩阵A不存在LR分解,所以方程无解\n");
+		exit (0); 
+	 }
+	 else A[j][i]=A[j][i]/A[i][i];
+   }
+   //解矩阵方程 
+    b[1]=b[1]/A[1][1];
+    for(i=2;i<=n;i++)
+    {
+    	for(k=1;k<=i-1;k++)
+    	b[i]=b[i]-b[k]*A[i][k];
+    	b[i]=b[i]/A[i][i];
+	}
+	b[n]=b[n]/A[n][n];
+	for(i=n-1;i>=1;i--)
+	for(k=i+1;k<=n;k++)
+	b[i]=b[i]-b[k]*A[i][k];
+	b[i]=b[i]/A[i][i];
+	printf("\n\n经计算得解为:\n");
+	for(i=0;i<=n;i++)
+		printf("%f\t",b[i]);
+	}
